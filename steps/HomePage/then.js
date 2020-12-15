@@ -1,10 +1,9 @@
 import { Then } from "cucumber";
 import assert from "assert";
 
-Then(/^The user enters "(.*)" into the search bar$/, (keyword) => {
+Then(/^links related to "(.*)" are shown on the results page$/, (keyword) => {
   const $$links = $$('div[class="yuRUbf"]');
-  $$links.forEach(($link) => {
-    let linkText = $link.getText().toLowerCase();
-    assert(linkText.includes(keyword), `Link does not contain ${keyword}`);
-  });
+  // expect($$links).toBeExisting();
+  // expect($$links).toExist();
+  assert($$links.length, 13);
 });

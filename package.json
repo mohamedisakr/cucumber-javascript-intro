@@ -4,7 +4,7 @@
   "description": "Автоматизация тестирования на JavaScript + webdriverIO (Vadym Morozov) https://www.youtube.com/playlist?list=PLP1-M5OhC7yjAZ1-llDH45nxLfKKbcxGe",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run wdio.conf.js"
+    "test": "npx wdio wdio.conf.js"
   },
   "keywords": [],
   "author": "",
