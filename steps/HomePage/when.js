@@ -1,9 +1,11 @@
 import { When } from "cucumber";
-import search from "../../support/actions/search";
+// import homePage from "../../page-objects/home.page";
+import googleSearch from "../../support/actions/search";
 //
 When(/^The user enters "(.*)" into the search bar$/, (keyword) => {
-  const $searchBox = $("input[name='q']");
-  search(keyword, $searchBox);
+  // const $searchBox = $("input[name='q']");
+  // search(keyword, $searchBox);
+  googleSearch(keyword);
 
   // const $searchBox = $("input[name='q']");
   // $searchBox.waitForDisplayed(5000);

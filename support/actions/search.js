@@ -1,6 +1,5 @@
-export default (keyword, inputField) => {
-  inputField.waitForDisplayed(5000);
-  inputField.click();
-  inputField.setValue(keyword);
-  inputField.keys("\uE007");
+import homePage from "../../page-objects/home.page";
+
+export default (keyword) => {
+  homePage.search(keyword);
 };
